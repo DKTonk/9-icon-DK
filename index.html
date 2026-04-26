@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        <style>
+            body{
+                background-color: rgb(239, 253, 199);
+            }
+        </style>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="img1" src="img/Sound2.png" height="200" width="200" onmouseover="this.src='img/Sound1.png';" onmouseout="this.src='img/Sound2.png';"/></div>
+            <div class="image-container"><img id="img2" src="img/Water2.png" height="200" width="200" onmouseover="this.src='img/Water1.png';" onmouseout="this.src='img/Water2.png';"/></div>
+            <div class="image-container"><img id="img3" src="img/Basket2.png" height="200" width="200" onmouseover="this.src='img/Basket1.png';" onmouseout="this.src='img/Basket2.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="img/Chip2.png" height="200" width="200" onmouseover="this.src='img/Chip1.png';" onmouseout="this.src='img/Chip2.png';"/></div>
+            <div class="image-container"><img id="img5" src="img/Rocket2.png" height="200" width="200" onmouseover="this.src='img/Rocket1.png';" onmouseout="this.src='img/Rocket2.png';"/></div>
+            <div class="image-container"><img id="img6" src="img/Plane2.png" height="200" width="200" onmouseover="this.src='img/Plane1.png';" onmouseout="this.src='img/Plane2.png';"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="img/Star2.png" height="200" width="200" onmouseover="this.src='img/Star1.png';" onmouseout="this.src='img/Star2.png';"/></div>
+            <div class="image-container"><img id="img8" src="img/Cog2.png" height="200" width="200" onmouseover="this.src='img/Cog1.png';" onmouseout="this.src='img/Cog2.png';"/></div>
+            <div class="image-container"><img id="img9" src="img/Dance2.png" height="200" width="200" onmouseover="this.src='img/Dance1.png';" onmouseout="this.src='img/Dance2.png';"/></div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/Soundwave.mp3");
+            var sound2 = new buzz.sound("sound/Water.mp3");
+            var sound3 = new buzz.sound("sound/Basket.mp3");
+            var sound4 = new buzz.sound("sound/Computer.mp3");
+            var sound5 = new buzz.sound("sound/Rocket.mp3");
+            var sound6 = new buzz.sound("sound/Whoosh.mp3");
+            var sound7 = new buzz.sound("sound/Sparks.mp3");
+            var sound8 = new buzz.sound("sound/Cogs.mp3");
+            var sound9 = new buzz.sound("sound/Dance.mp3");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
